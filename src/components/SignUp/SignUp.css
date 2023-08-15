@@ -1,0 +1,88 @@
+.checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 17px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  margin-right: 0;
+  margin-left: 0%;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  border: 0.5px solid black;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #fff, 0 0 2px rgba(0, 0, 0, 0.3); /* Add this line to add the hover shadow effect */
+}
+
+.checkbox:hover input ~ .checkmark {
+  border-color: #ccc;
+  box-shadow: 0 0 0 0.25em rgba(0, 0, 0, 0.12); /* Add this line to increase the hover shadow effect */
+}
+
+.checkbox input:checked ~ .checkmark {
+  background: #00a2df;
+  border-color: rgba(121, 219, 96, 0.55);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.check-box__Footer {
+  align-items: center;
+  vertical-align: center;
+  display: -webkit-inline-flex;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  place-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 0;
+  color: #686c6d;
+}
+.terms-link,
+.privacy-link {
+  color: #686c6d;
+  text-decoration: underline;
+}

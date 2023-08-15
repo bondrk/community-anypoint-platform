@@ -1,0 +1,32 @@
+.for-get-link,
+.use-cust-link {
+  color: #686c6d;
+  text-decoration: underline;
+}
+.footer-link {
+  text-decoration: underline;
+}
+.show-hide-container {
+  position: absolute;
+  right: 1rem;
+  top: 46%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.error-style {
+  background-color: #fff;
+  border-left: 2px solid #d1344e;
+  border-radius: 0 0 3px 3px;
+  border-right: 2px solid #d1344e;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  color: var(--red3);
+  font-size: 13px;
+  padding: 10px;
+  width: 100%;
+  color: #d1344e;
+}
+.for-get-link,
+.use-cust-link {
+  font-size: 13px;
+}
