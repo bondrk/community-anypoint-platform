@@ -1,0 +1,42 @@
+.for-get-link,
+.use-cust-link {
+  color: #686c6d;
+  text-decoration: underline;
+}
+.footer-link {
+  text-decoration: underline;
+}
+.fonts-icon {
+  margin-right: 5px;
+  margin-top: 3px;
+}
+.fonts-icon:hover {
+  transform: translateX(-5px);
+}
+.signin-usecust:hover {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.use--cust__link {
+  align-items: center;
+  color: #6b6c6d;
+  display: flex;
+  font-family: var(--sans-serif);
+  font-size: 14px;
+  justify-content: center;
+  text-decoration: none;
+}
+.use--cust__dom {
+  display: inline-block;
+  max-width: 100%;
+  overflow: visible;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.custom-label-value {
+  font-size: 14px;
+  font-weight: normal;
+}

@@ -1,0 +1,25 @@
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.my-form {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  flex-grow: 1;
+}
+.mule-logo {
+  margin: auto;
+}
+.my-form, .form-page {
+  background: linear-gradient(-90deg, #00a2df, #4079f1);
+}
+.form-login{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

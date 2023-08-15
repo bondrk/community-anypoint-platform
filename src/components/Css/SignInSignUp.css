@@ -1,0 +1,30 @@
+.button-signup {
+  background: transparent;
+  font-family: Open Sans, sans-serif;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 9px 15px 9px 15px;
+  text-align: center;
+  margin-left: 10px;
+}
+.button-signin {
+  background: transparent;
+  font-family: Open Sans, sans-serif;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 9px 15px 9px 15px;
+  text-align: center;
+  margin-left: 10px;
+}
