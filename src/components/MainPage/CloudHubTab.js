@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import { Link } from "react-router-dom";
 const CloudHubTab = () => {
   const [activeTab, setActiveTab] = useState("tab1");
 
@@ -17,72 +18,72 @@ const CloudHubTab = () => {
               activeTab === "tab1" ? "is-active" : ""
             }`}
           >
-            <a
+            <Link
               className="custom-tab"
               onClick={() => handleTabClick("tab1")}
-              href="/#"
+              href="#"
             >
               <span className="tab-content-width"> Runtime</span>
-            </a>
+            </Link>
           </li>
           <li
             className={`custom-tab-li ${
               activeTab === "tab2" ? "is-active" : ""
             }`}
           >
-            <a
+            <Link
               className="custom-tab"
               onClick={() => handleTabClick("tab2")}
-              href="/#"
+              href="#"
             >
               <span className="tab-content-width"> Properties</span>
-            </a>
+            </Link>
           </li>
           <li
             className={`custom-tab-li ${
               activeTab === "tab3" ? "is-active" : ""
             }`}
           >
-            <a
+            <Link
               className="custom-tab"
               onClick={() => handleTabClick("tab3")}
-              href="/#"
+              href="#"
             >
               <span className="tab-content-width"> Insight</span>
-            </a>
+            </Link>
           </li>
           <li
             className={`custom-tab-li ${
               activeTab === "tab4" ? "is-active" : ""
             }`}
           >
-            <a
+            <Link
               className="custom-tab"
               onClick={() => handleTabClick("tab4")}
-              href="/#"
+              href="#"
             >
               <span className="tab-content-width"> Logging</span>
-            </a>
+            </Link>
           </li>
           <li
             className={`custom-tab-li ${
               activeTab === "tab5" ? "is-active" : ""
             }`}
           >
-            <a
+            <Link
               className="custom-tab"
               onClick={() => handleTabClick("tab5")}
-              href="/#"
+              href="#"
             >
               <span className="tab-content-width"> Static IPs</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="tab-content">
         {activeTab === "tab1" && (
-          <div className="columns">
-            <div className="column is-4-fullhd">
+          <div className="columns is-multiline ">
+            <div className="column is-4-fullhd is-4-desktop is-4-tablet">
               <p className="Deploy-application__name is-capitalized ">
                 Runtime version
               </p>
@@ -90,7 +91,32 @@ const CloudHubTab = () => {
                 className="input deploy-form"
                 type="text"
                 placeholder="versions"
+                disabled
               ></input>
+            </div>
+            <div className="column is-4-fullhd is-4-tablet">
+              <p className="Deploy-application__name is-capitalized ">
+                Worker size
+              </p>
+              <input
+                className="input deploy-form"
+                type="text"
+                placeholder="size"
+                disabled
+              ></input>
+            </div>
+            <div className="column is-4-fullhd is-4-desktop is-4-tablet">
+              <p className="Deploy-application__name is-capitalized ">
+                Workers
+              </p>
+              <input
+                className="input deploy-form"
+                type="text"
+                placeholder="1"
+                disabled
+              ></input>
+            </div>
+            <div className="column is-7-fullhd is-7-desktop is-7-tablet">
               <span className="is-flex mt-2">
                 <TbBrandGoogleAnalytics color="purple" />
                 <p className="is-size-7 ml-1 para-for__deploy">
@@ -108,7 +134,7 @@ const CloudHubTab = () => {
               </span>
               <div className="check-box__Footer mt-3 ">
                 <label className="checkbox">
-                  <input type="checkbox" name="checkbox" />
+                  <input type="checkbox" name="checkbox" disabled />
                   <span className="checkmark"></span>
                   <footer className="checkbox--for__form deploy-checks">
                     Automaticaly restart the application when not responding
@@ -137,7 +163,7 @@ const CloudHubTab = () => {
               </div>
               <div className="check-box__Footer">
                 <label className="checkbox">
-                  <input type="checkbox" name="checkbox" />
+                  <input type="checkbox" name="checkbox" disabled />
                   <span className="checkmark"></span>
                   <footer className="checkbox--for__form  deploy-checks">
                     Use Object store
@@ -145,51 +171,32 @@ const CloudHubTab = () => {
                 </label>
               </div>
             </div>
-            <div className="column is-4-fullhd">
-              <p className="Deploy-application__name is-capitalized ">
-                Worker size
-              </p>
-              <input
-                className="input deploy-form"
-                type="text"
-                placeholder="size"
-              ></input>
-            </div>
-            <div className="column is-4-fullhd">
-              <p className="Deploy-application__name is-capitalized ">
-                Workers
-              </p>
-              <input
-                className="input deploy-form"
-                type="text"
-                placeholder="1"
-              ></input>
-            </div>
           </div>
         )}
         {activeTab === "tab2" && (
           <div className="columns">
             <div className="column">
-              <div class="tabs is-toggle">
+              <p>coming soon</p>
+              {/* <div class="tabs is-toggle">
                 <ul>
                   <li class="is-active">
-                    <a href="/#">
+                    <Link href="#">
                       <span class="icon is-small">
                         <i class="fas fa-image" aria-hidden="true"></i>
                       </span>
                       <span>Table view</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/#">
+                    <Link href="#">
                       <span class="icon is-small">
                         <i class="fas fa-music" aria-hidden="true"></i>
                       </span>
                       <span>Text view</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         )}
@@ -199,14 +206,18 @@ const CloudHubTab = () => {
               <div className="">
                 <div class="control ">
                   <label class="radio">
-                    <input type="radio" name="rsvp" className="mr-1" />
+                    <input type="radio" name="rsvp" className="mr-1" disabled />
                     Disabled
                   </label>
                   <p className="m-4">Do not store any metadata.</p>
                   <div>
-                    {" "}
                     <label class="radio">
-                      <input type="radio" name="rsvp" className="mr-1" />
+                      <input
+                        type="radio"
+                        name="rsvp"
+                        className="mr-1"
+                        disabled
+                      />
                       Metadata
                     </label>
                     <p className="m-4 radio-text">
@@ -235,14 +246,12 @@ const CloudHubTab = () => {
         )}
         {activeTab === "tab4" && (
           <div>
-            <h2>Tab 4 Content</h2>
-            <p>This is the content of Tab 4.</p>
+            <p>coming soon</p>
           </div>
         )}
         {activeTab === "tab5" && (
           <div>
-            <h2>Tab 5 Content</h2>
-            <p>This is the content of Tab 5.</p>
+            <p>coming soon</p>
           </div>
         )}
       </div>

@@ -17,7 +17,7 @@ const RuntimeDeployPage = () => {
         <h2 className="deploy-heading">There are no applications to show</h2>
         <Link
           className="button mt-2 deploy-button is-primary"
-          to="/coming-soon"
+          to="/runtime-manager/addapplication"
         >
           Deploy Application
         </Link>
