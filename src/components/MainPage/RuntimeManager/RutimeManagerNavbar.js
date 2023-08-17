@@ -584,15 +584,15 @@ function RuntimeManagerNavbar() {
                   <PiNote size={20} />
                   <span className="ml-2">Privacy Policy</span>
                 </a>
-                <a
+                <Link
                   className="navbar-item is-flex-touch is-align-items-center"
-                  href="/#"
+                  href="#"
                 >
                   <VscSignOut size={20} />
                   <span className="ml-2" onClick={handleSignOut}>
                     Sign Out
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
